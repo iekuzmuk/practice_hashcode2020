@@ -46,7 +46,7 @@ function process_file($filename,$max,$iterate_loopypes,$InputArray){
 			$quantity_of_pizzas++;
 			#if($z<>0) $sum_of_slicestr .= " " . $ResultsArray[$z];
 			#else  $sum_of_slicestr = $ResultsArray[$z];
-			if($z<>0) $sum_of_slicestr .= " " . $z;
+			if(strlen($sum_of_slicestr)) $sum_of_slicestr .= " " . $z;
 			else  $sum_of_slicestr = $z;
 
 		}
